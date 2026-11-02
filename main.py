@@ -25,12 +25,13 @@ def reset_world():
     global boy
 
     grass=[]
-    grass.append(Grass(30))
-    grass.append(Grass(15))
+    grass.append(Grass(30,0))
+    grass.append(Grass(10,1))
     boy = Boy()
     game_world.add_object(boy, 1)
-    game_world.add_object(grass[0], 0)
-    game_world.add_object(grass[1], 2)
+    for o in grass:
+        game_world.add_object(o,o.layer)
+    print(grass[0].y)
 
 
 
