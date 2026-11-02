@@ -1,4 +1,4 @@
-world =[[],[]]
+world =[[],[],[]]
 
 #add object, layer지정 필요
 def add_object(o, depth=0):     #기본depth는0
